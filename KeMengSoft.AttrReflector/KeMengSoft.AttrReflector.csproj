@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <Authors>HuangKeMeng</Authors>
+    <Company>KeMengSoft</Company>
+    <PackageProjectUrl>https://github.com/huangkemeng/AttrReflector</PackageProjectUrl>
+    <PackageReleaseNotes>特性反射器，快速获取你想要的特性信息。更多信息请访问https://github.com/huangkemeng/AttrReflector</PackageReleaseNotes>
+  </PropertyGroup>
+
+</Project>

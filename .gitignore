@@ -1,0 +1,8 @@
+﻿################################################################################
+# 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
+################################################################################
+
+/.vs/KeMengSoft.AttrReflector
+/KeMengSoft.AttrReflector/bin
+/KeMengSoft.AttrReflector/obj
+/KeMengSoft.AttrReflector/Properties/PublishProfiles
