@@ -81,19 +81,19 @@
   ```cs
   
   //获取类上的特性
-  MyAttribute myAttribute = Reflector.GetAttributeProvider<OneClass>().GetAttributeInfo<MyAttribute>();
+  MyAttribute myAttribute = KMReflector.GetAttributeProvider<OneClass>().GetAttributeInfo<MyAttribute>();
   
   //获取静态属性上的特性
-  MyAttribute myAttribute = Reflector.GetAttributeProvider<OneClass>(() => OneClass.Prop2).GetAttributeInfo<MyAttribute>();
+  MyAttribute myAttribute = KMReflector.GetAttributeProvider<OneClass>(() => OneClass.Prop2).GetAttributeInfo<MyAttribute>();
   
   //获取静态字段上的特性
-  MyAttribute myAttribute = Reflector.GetAttributeProvider<OneClass>(() => OneClass.field2).GetAttributeInfo<MyAttribute>();
+  MyAttribute myAttribute = KMReflector.GetAttributeProvider<OneClass>(() => OneClass.field2).GetAttributeInfo<MyAttribute>();
   
   //获取静态方法上的特性信息
-  MyAttribute myAttribute6 = Reflector.GetAttributeProvider<OneClass>(() => nameof(OneClass.Method2)).GetAttributeInfo<MyAttribute>();
+  MyAttribute myAttribute6 = KMReflector.GetAttributeProvider<OneClass>(() => nameof(OneClass.Method2)).GetAttributeInfo<MyAttribute>();
   
-   //当然你也直接传入一个类型，获取给类型对象上的特性，但不建议那么做
-   MyAttribute myAttribute8 = Reflector.GetAttributeProvider<OneClass>(() => typeof(OneClass)).GetAttributeInfo<MyAttribute>();
+   //当然你也直接传入一个类型，获取该类型对象上的特性，但不建议那么做,可读性不高
+   MyAttribute myAttribute8 = KMReflector.GetAttributeProvider<OneClass>(() => typeof(OneClass)).GetAttributeInfo<MyAttribute>();
    
   ```
   
